@@ -53,9 +53,7 @@ CI/CD is designed so you can show the public org to recruiters without leaking s
 
 ## Deployment assets
 
-Deployment assets (Terraform/Bicep modules, per-tenant variables, policy bundles, workflow files, redacted runbooks) are kept in the **private** repository:
-
-👉 **`fedlin-aws-security-baseline-deployment`**
+Deployment assets (Terraform/Bicep modules, per-tenant variables, policy bundles, workflow files, redacted runbooks) are kept in a **private FEDLIN deployment repository** and are provided only as part of an engagement.
 
 This public repo tracks the service description, not the customer code.
 
