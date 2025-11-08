@@ -4,8 +4,11 @@
 [![AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?logo=amazon-aws)](https://aws.amazon.com/)
 [![ISO 27001](https://img.shields.io/badge/ISO%2027001-Mapped-1f77b4)](#compliance-coverage)
 [![SOC 2](https://img.shields.io/badge/SOC%202-Mapped-d62728)](#compliance-coverage)
-[![NIST 800-53](https://img.shields.io/badge/NIST%20800--53-Mapped-2ca02c)](#compliance-coverage)
+[![NIST](https://img.shields.io/badge/NIST-Mapped-2ca02c)](#compliance-coverage)
 [![HIPAA](https://img.shields.io/badge/HIPAA-Mapped-9467bd)](#compliance-coverage)
+[![PCI DSS](https://img.shields.io/badge/PCI%20DSS-Mapped-ff6b35)](#compliance-coverage)
+[![NERC CIP](https://img.shields.io/badge/NERC%20CIP-Mapped-4a90e2)](#compliance-coverage)
+[![FERC](https://img.shields.io/badge/FERC-Mapped-8b4513)](#compliance-coverage)
 [![Maintained](https://img.shields.io/badge/Maintained-Yes-green)](#)
 
 **Customer-tenant-first AWS security hardening without taking ownership of your cloud**
@@ -21,7 +24,7 @@ Deploy enterprise-grade AWS security controls in 3-5 business days with 100% cus
 A comprehensive security baseline for AWS environments preparing for compliance audits or requiring repeatable security hardening.
 
 **Designed for:**
-- **Compliance teams** preparing for SOC 2, ISO 27001, HIPAA, or NIST assessments
+- **Compliance teams** preparing for SOC 2, ISO 27001, HIPAA, NIST (CSF/800-53), PCI DSS, NERC CIP, FERC, FedRAMP, GDPR, CMMC, or other industry framework assessments
 - **Organizations** needing automated security controls with audit-ready evidence
 - **MSPs/MSSPs** requiring standardized security deployment across client accounts
 - **Security teams** implementing AWS security best practices at scale
@@ -101,6 +104,39 @@ terraform/
 - §164.312(a)(2)(i): Unique user identification
 - §164.312(b): Audit controls
 
+**PCI DSS:**
+- Requirement 1: Firewall configuration (VPC security groups, network ACLs)
+- Requirement 2: Default passwords and security parameters (IAM password policy)
+- Requirement 3: Protect stored cardholder data (KMS encryption)
+- Requirement 7: Restrict access to cardholder data (IAM access controls)
+- Requirement 8: Identify and authenticate access (MFA, IAM policies)
+- Requirement 10: Track and monitor access (CloudTrail, Config, GuardDuty)
+
+**NERC CIP:**
+- CIP-003: Security management controls (IAM, access policies)
+- CIP-005: Electronic security perimeters (VPC, security groups)
+- CIP-007: Systems security management (Config rules, GuardDuty)
+- CIP-010: Configuration change management (Config tracking, CloudTrail)
+
+**FERC:**
+- Reliability standards alignment with NERC CIP requirements
+- Audit trail and evidence collection for regulatory reviews
+
+**FedRAMP:**
+- AC-2: Account Management
+- AC-3: Access Enforcement
+- AU-2: Audit Events
+- CM-6: Configuration Settings
+- SC-7: Boundary Protection
+
+**GDPR:**
+- Article 32: Security of processing (encryption, access controls, logging)
+- Article 33: Breach notification (GuardDuty, Security Hub alerts)
+
+**CMMC:**
+- Level 2: Intermediate cyber hygiene (access controls, audit logging)
+- Level 3: Good cyber hygiene (advanced monitoring, incident response)
+
 ---
 
 ## 🔒 Customer-Tenant-First Architecture
@@ -123,7 +159,7 @@ All security controls and evidence remain in your AWS account:
 **Benefits for regulated environments:**
 - Satisfies data residency requirements
 - Simplifies vendor risk assessments
-- Supports SOC 2 / ISO 27001 / HIPAA / NIST evidence expectations
+- Supports SOC 2, ISO 27001, HIPAA, NIST (CSF/800-53), PCI DSS, NERC CIP, FERC, FedRAMP, GDPR, CMMC, and other industry framework evidence expectations
 - No ongoing data processing agreements beyond initial deployment
 
 ---
